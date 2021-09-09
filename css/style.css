@@ -1,0 +1,453 @@
+/*fonts*/
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: DancingScript-Bold;
+  src: url(../fonts/Dancing_Script/DancingScript-Bold.ttf);
+}
+/*fonts*/
+/*common css start*/
+body {
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+.spacing {
+  margin: 90px 0;
+}
+.common_heading {
+  font-family: Roboto-Bold;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  margin-bottom: 80px;
+}
+.custom_btn {
+  width: 127px;
+  height: 40px;
+  font-family: Roboto-Medium;
+  color: #fff;
+  background-color: #ff5353;
+}
+.custom_btn:hover {
+  background-color: transparent;
+  color: #ff5353;
+  border: 2px solid #ff5353;
+}
+.btn:focus {
+  box-shadow: none;
+}
+/*common css end*/
+
+/*header start
+_____________________*/
+/*Top header start*/
+.top_header {
+  background-color: #fef7f6;
+}
+.top_contact P {
+  font-family: Roboto-Light;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 20px;
+}
+.top_contact a {
+  font-size: 12px;
+  color: #000000;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+.tpc_right a {
+  text-transform: uppercase;
+  justify-content: right;
+}
+.top_contact a:hover {
+  font-family: Roboto-Medium;
+}
+/*bottom header*/
+.logo {
+  font-family: DancingScript-Bold;
+  font-size: 35px;
+  color: #e49790 !important;
+}
+.menu ul li a {
+  font-family: Roboto-Medium;
+  font-size: 18px;
+  color: #000000;
+  margin-right: 20px;
+}
+.menu ul li a:focus {
+  color: #000000;
+}
+.menu li {
+  position: relative;
+}
+.menu li ul {
+  position: absolute;
+  top: 120%;
+  left: -22%;
+  width: 182px;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: -1px 5px 5px 0px rgb(0, 0, 0, 0.1);
+}
+.cart span {
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  left: 30px;
+  color: #fff;
+  background-color: #ff5353;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px 5px;
+}
+.menu ul li a:hover,
+.cart:hover {
+  color: #ff5353;
+}
+/*header end*/
+
+/*banner start
+_____________________*/
+.bannner1 {
+  background-image: url(../images/bg-1.jpg);
+  background-size: cover;
+}
+.banner_text {
+  font-family: Roboto-Medium;
+  text-align: center;
+  margin: 220px 0;
+}
+.banner_text p {
+  font-size: 18px;
+  color: #565656;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.banner_text h1 {
+  font-size: 60px;
+}
+/*banner end*/
+
+/*featured product start
+_____________________*/
+.feature_item {
+  position: relative;
+}
+.feature_item img {
+  height: 490px;
+  margin-left: 40px;
+}
+.overlay {
+  position: absolute;
+  left: 29%;
+  bottom: 0;
+}
+.overlay ul li {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.overlay ul li a {
+  color: #000000;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 14px 16px;
+}
+.overlay ul li a:hover {
+  color: #fff;
+  background-color: #ff5353;
+}
+.feature_item:hover .overlay ul li {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-75px);
+}
+.overlay ul li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.overlay ul li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.overlay ul li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+/*feature text*/
+.common_text {
+  text-align: center;
+  margin-top: 25px;
+}
+.common_text h5 {
+  font-size: 15px;
+  color: #888888;
+  text-transform: capitalize;
+}
+.common_text ul li a {
+  color: #ff5353;
+  text-decoration: none;
+}
+/*featured product start*/
+
+/*2nd banner start
+_______________________*/
+.banner2 {
+  background-image: url(../images/bg-2.jpg);
+  background-size: cover;
+  background-color: #eae3da;
+}
+.banner2_text {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 112px 0;
+}
+.banner2_text p {
+  font-family: DancingScript-Bold;
+  font-size: 70px;
+}
+.banner2 h1 {
+  font-family: Roboto-Light;
+  font: 42px;
+  margin-bottom: 35px;
+}
+.banner2_img {
+  width: 350px;
+  height: 360px;
+}
+/*2nd banner end*/
+/*slider start
+_______________________*/
+.slider_item img {
+  height: 330px;
+  justify-items: center;
+  margin-left: 15px;
+}
+/*slider end*/
+
+/*service start
+___________________*/
+.service_icon {
+  text-align: center;
+  padding: 30px 0;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+.service_icon:hover {
+  border: 1px solid #ff5353;
+}
+/*service end*/
+/*trending section start
+_________________________*/
+.trending_heading {
+  margin-bottom: 50px;
+}
+.feature_info {
+  margin-top: 30px;
+}
+.feature_info img {
+  height: 310px;
+}
+.feature_info .overlay {
+  position: absolute;
+  bottom: 80px;
+}
+/*trending section end*/
+/*BLog section start
+_________________________*/
+.blog_item {
+  border-bottom: 1px solid #888888;
+  width: 310px;
+  margin: 0 auto;
+}
+.blog_item img {
+  width: 100%;
+}
+.blog_text {
+  margin-top: 10px;
+}
+.blog_text span {
+  width: 20px;
+  height: 8px;
+  background-color: #ff5353;
+  display: inline-block;
+  border-radius: 20%;
+}
+.blog_p {
+  font-size: 14px;
+  color: #888888;
+  display: inline-block;
+  margin-left: 10px;
+}
+.blog_text h2 {
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.blog_item:hover h2 {
+  color: #ff5353;
+}
+.comment {
+  margin-top: 10px;
+}
+.comment ul li a {
+  color: #888888;
+  text-decoration: none;
+  margin: 18px;
+}
+.comment ul li a:hover,
+.comment ul li span:hover {
+  color: #ff5353;
+}
+/*BLog section end*/
+/*Follow Us section start*/
+.follow_us {
+  position: relative;
+}
+.follow_us img {
+  width: 310px;
+}
+.follow_overlay {
+  position: absolute;
+  top: 9px;
+  width: 101%;
+  height: 100%;
+  background-color: rgba(255, 83, 83, 0.5);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  z-index: 5;
+}
+.follow_icon a i {
+  position: absolute;
+  bottom: 85px;
+  left: 145px;
+  font-size: 30px;
+  color: #fff;
+}
+.follow_overlay:hover {
+  opacity: 1;
+  top: 0;
+}
+/*Follow Us section end*/
+/*footer start
+_______________*/
+.footer {
+  background-color: #ebe3da;
+}
+.footer_text {
+  text-align: left;
+  margin-top: 90px;
+}
+.footer_text p {
+  font-family: Roboto-Bold;
+  font-size: 18px;
+}
+.footer_text ul li {
+  list-style: none;
+}
+.footer_text ul li a {
+  font-size: 14px;
+  color: #888888;
+  text-decoration: none;
+}
+.footer_text ul li a:hover {
+  color: #ff5353;
+}
+.get_app {
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #b6b6b6;
+}
+.install_btn {
+  width: 145px;
+  height: 50px;
+  position: relative;
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  background-color: #fff;
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.install_btn i {
+  font-size: 23px;
+  color: #ff5353;
+  position: absolute;
+  top: 14px;
+  transition: 0.3s;
+}
+.install_btn p {
+  font-size: 11px;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  word-spacing: 1px;
+}
+.install_btn {
+  background-color: #ff5353;
+  color: #fff;
+  transition: 0.3s;
+}
+.install_btn i {
+  color: #fff;
+  transition: 0.2s;
+}
+.install_btn:hover,
+.install_btn:hover i {
+  background-color: #fff;
+  color: #ff5353 !important;
+}
+/*social links*/
+.social_links {
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.social_links ul li {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #000000;
+  text-align: center;
+  padding-top: 5px;
+  margin-left: 5px;
+  transition: 0.4s;
+}
+.social_links ul li i {
+  color: #000000;
+}
+.social_links ul li:hover,
+.social_links ul li:hover i {
+  color: #fff;
+  background-color: #ff5353;
+}
+/*footer bottom*/
+footer {
+  border-top: 1px solid #b6b6b6;
+}
+.copyright {
+  text-align: center;
+  padding: 20px 0 10px 0;
+  margin: 0;
+}
+/*footer end*/
