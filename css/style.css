@@ -176,7 +176,7 @@ _____________________*/
   background-color: #fff;
   text-decoration: none;
   border-radius: 50%;
-  padding: 14px 16px;
+  padding: 12px 14px;
 }
 .overlay ul li a:hover {
   color: #fff;
@@ -434,6 +434,7 @@ _______________*/
   transition: 0.4s;
 }
 .social_links ul li i {
+  font-size: 18px;
   color: #000000;
 }
 .social_links ul li:hover,
